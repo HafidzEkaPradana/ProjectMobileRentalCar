@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "790583613614",
+    "project_id": "projectmobile-cd70a",
+    "storage_bucket": "projectmobile-cd70a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790583613614:android:174c91521e9f54de10f53f",
+        "android_client_info": {
+          "package_name": "com.sugarseries.projectmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790583613614-9s1pk6qf3lgtlags03e9rl6tdji7aqqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaeRgB4jqNaTxeeSrsfeqhPgiXOESG4Vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790583613614-9s1pk6qf3lgtlags03e9rl6tdji7aqqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
