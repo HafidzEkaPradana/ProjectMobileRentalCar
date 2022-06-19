@@ -43,7 +43,8 @@
             android:lines="5"
             android:padding="10dp"
             android:textColor="#393939"
-            android:textColorHint="#858484" />
+            android:textColorHint="#858484"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView4"
@@ -56,9 +57,10 @@
             android:id="@+id/tx_sewa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:ems="10"
             android:inputType="date"
-            android:text="Pilih Tanggal" />
+            android:text="@string/tgl" />
 
         <TextView
             android:id="@+id/textView5"
@@ -71,9 +73,11 @@
             android:id="@+id/tx_selesai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:ems="10"
             android:inputType="date"
-            android:text="Pilih Tanggal" />
+            android:text="@string/tgl"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView6"
@@ -97,11 +101,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/savebtn"
-        android:layout_width="376dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:elevation="5dp"
         android:layout_gravity="center"
         android:backgroundTint="#F7F7F7"
+        android:elevation="5dp"
         android:text="@string/save"
         android:textColor="#3c6e71"
         android:textStyle="bold" />

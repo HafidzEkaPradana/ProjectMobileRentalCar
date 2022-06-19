@@ -1,6 +1,5 @@
 package com.sugarseries.projectmobile.adapter;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,13 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sugarseries.projectmobile.R;
-import com.sugarseries.projectmobile.model.DataCar;
 import com.sugarseries.projectmobile.model.DataPesan;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PesanAdapter extends RecyclerView.Adapter<PesanAdapter.MyViewHolder> {
+
     private Context context;
     private List<DataPesan> list;
     private Dialog dialog;
@@ -26,7 +25,10 @@ public class PesanAdapter extends RecyclerView.Adapter<PesanAdapter.MyViewHolder
         context = cont;
         list = data;
     }
-
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView vAlamat, vSewa, vSelesai, vHarga;
         public MyViewHolder(@NonNull View itemView) {
@@ -61,14 +63,10 @@ public class PesanAdapter extends RecyclerView.Adapter<PesanAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull PesanAdapter.MyViewHolder holder, int position) {
         holder.vAlamat.setText(list.get(position).getAlamat());
-        holder.vSewa.setText(list.get(position).getTglSewa());
-        holder.vSelesai.setText(list.get(position).getTglSelesai());
+        holder.vSewa.setText(list.get(position).getSewa());
+        holder.vSelesai.setText(list.get(position).getSelesai());
         holder.vHarga.setText(list.get(position).getHarga());
-
     }
 
-    @Override
-    public int getItemCount() {
-        return list.size();
-    }
+
 }

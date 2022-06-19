@@ -1,7 +1,7 @@
 package com.sugarseries.projectmobile.model;
 
 public class DataPesan {
-    String id, alamat, tglSewa, tglSelesai, harga;
+    String id, alamat, sewa, selesai, harga;
 
     public DataPesan(String id, String alamat, String tglSewa, String tglSelesai, String harga) {
 
@@ -27,20 +27,20 @@ public class DataPesan {
         this.alamat = alamat;
     }
 
-    public String getTglSewa() {
-        return tglSewa;
+    public String getSewa() {
+        return sewa;
     }
 
-    public void setTglSewa(String tglSewa) {
-        this.tglSewa = tglSewa;
+    public void setSewa(String sewa) {
+        this.sewa = sewa;
     }
 
-    public String getTglSelesai() {
-        return tglSelesai;
+    public String getSelesai() {
+        return selesai;
     }
 
-    public void setTglSelesai(String tglSelesai) {
-        this.tglSelesai = tglSelesai;
+    public void setSelesai(String selesai) {
+        this.selesai = selesai;
     }
 
     public String getHarga() {

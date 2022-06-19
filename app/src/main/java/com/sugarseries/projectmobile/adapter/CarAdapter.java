@@ -12,11 +12,12 @@ import com.sugarseries.projectmobile.R;
 import com.sugarseries.projectmobile.model.DataCar;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CarAdapter extends RecyclerView.Adapter<CarAdapter.MyViewHolder> {
 
     private Context context;
-    private ArrayList<DataCar> dataCars = new ArrayList<>();
+    private ArrayList<DataCar> dataCars;
 
     public CarAdapter(Context cont, ArrayList<DataCar> data){
         context = cont;

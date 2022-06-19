@@ -110,8 +110,6 @@ public class AddPemesanan extends AppCompatActivity {
         pesan.put("selesai",selesai);
         pesan.put("harga",harga);
 
-        progressDialog.show();
-
         if(id!=null){
             db.collection("pesans").document(id)
                     .set(pesan)
@@ -127,7 +125,7 @@ public class AddPemesanan extends AppCompatActivity {
                         }
                     });
         }else{
-            db.collection("users")
+            db.collection("pesans")
                     .add(pesan)
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override

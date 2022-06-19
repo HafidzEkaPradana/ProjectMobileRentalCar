@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <LinearLayout
@@ -26,60 +26,120 @@
             app:srcCompat="@drawable/ic_launcher_background" />
 
         <TextView
-            android:id="@+id/tv_mobil"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_toRightOf="@+id/foto_mobil"
-            android:text="Nama Mobil"
+            android:text="Mobil"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_mobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="isi"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginStart="7dp"
+            android:layout_toRightOf="@+id/foto_mobil"
+            android:text="Jenis"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_jenis"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_mobil"
-            android:layout_marginLeft="7dp"
+            android:layout_marginLeft="41dp"
             android:layout_marginTop="3dp"
-            android:layout_toRightOf="@+id/foto_mobil"
-            android:text="Jenis Mobil"
+            android:layout_toRightOf="@+id/tv2"
+            android:text="isi"
             android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginStart="7dp"
+            android:layout_toRightOf="@+id/foto_mobil"
+            android:text="Jumlah"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_jumlah"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_jenis"
-            android:layout_marginLeft="7dp"
+            android:layout_marginLeft="28dp"
             android:layout_marginTop="3dp"
-            android:layout_toRightOf="@id/foto_mobil"
-            android:text="Jumlah Penumpang"
+            android:layout_toRightOf="@id/tv3"
+            android:text="isi"
             android:textSize="12dp"
             android:textStyle="bold" />
+
         <TextView
-            android:id="@+id/tv_merk"
+            android:id="@+id/tv4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_jumlah"
+            android:layout_below="@+id/tv3"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="3dp"
             android:layout_toRightOf="@+id/foto_mobil"
             android:text="Merk"
             android:textSize="12dp"
             android:textStyle="bold" />
+
         <TextView
-            android:id="@+id/tv_harga"
+            android:id="@+id/tv_merk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_jumlah"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv4"
+            android:text="isi"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_merk"
+            android:layout_below="@+id/tv4"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="3dp"
             android:layout_toRightOf="@+id/foto_mobil"
             android:text="Harga"
             android:textSize="12dp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_merk"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv5"
+            android:text="isi"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
     </RelativeLayout>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

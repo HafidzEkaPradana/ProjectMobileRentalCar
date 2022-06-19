@@ -39,7 +39,7 @@ public class Pemesanan extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    private List<DataPesan> list;
+    private ArrayList<DataPesan> list;
     private PesanAdapter pesanAdapter;
     private ProgressDialog progressDialog;
 
@@ -50,17 +50,16 @@ public class Pemesanan extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycler_view);
         btnAdd = findViewById(R.id.btnAdd);
-
-        progressDialog = new ProgressDialog(Pemesanan.this);
-        progressDialog.setTitle("Loading");
-        progressDialog.setMessage("Mengambil Data...");
-        pesanAdapter = new PesanAdapter(getApplicationContext(),list);
-
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         RecyclerView.ItemDecoration decoration = new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(decoration);
         recyclerView.setAdapter(pesanAdapter);
+
+        progressDialog = new ProgressDialog(Pemesanan.this);
+        progressDialog.setTitle("Loading");
+        progressDialog.setMessage("Mengambil Data...");
+        pesanAdapter = new PesanAdapter(getApplicationContext(),list);
 
         btnAdd.setOnClickListener(v ->{
             startActivity(new Intent(getApplicationContext(),AddPemesanan.class));
@@ -73,16 +72,15 @@ public class Pemesanan extends AppCompatActivity {
     }
     private void getData(){
         progressDialog.show();
-        db.collection("cars")
+        db.collection("pesans")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @SuppressLint("NotifyDataChanged")
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        list.clear();
                         if(task.isSuccessful()){
                             for(QueryDocumentSnapshot document : task.getResult()){
-                                DataPesan dataPesan = new DataPesan(document.getString("alamat"),document.getString("sewa"),document.getString("selesai"),document.getString("harga"));
+                                DataPesan dataPesan = new DataPesan(document.getString("alamat"),document.getString("harga"),document.getString("sewa"),document.getString("selesai"));
                                 dataPesan.setId(document.getId());
                                 list.add(dataPesan);
                             }

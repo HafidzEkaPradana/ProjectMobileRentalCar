@@ -10,12 +10,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10dp"
         android:text="@string/daftar"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/carList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </androidx.recyclerview.widget.RecyclerView>
 
