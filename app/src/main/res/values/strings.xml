@@ -24,6 +24,9 @@ Non-Bundled Plugins: org.jetbrains.kotlin (211-1.6.10-release-923-AS7442.40)</st
     <string name="txButtonSigin">Login</string>
     <string name="labelemail">Email</string>
     <string name="labelNohp">NoHp</string>
+    <string name="save">Pesan</string>
+    <string name="pesantravel">Pesan Travel</string>
+    <string name="isiAlamat">Alamat</string>
     <string name="labelJK">Jenis Kelamin</string>
     <string name="labelLogin">Login</string>
     <string name="tag">Ayo gunakan jasa kami !</string>

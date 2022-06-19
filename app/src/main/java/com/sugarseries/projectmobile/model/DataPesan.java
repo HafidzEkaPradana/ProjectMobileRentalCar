@@ -7,6 +7,10 @@ public class DataPesan {
 
     }
 
+    public DataPesan(String alamat, String sewa, String selesai, String harga) {
+
+    }
+
     public String getId() {
         return id;
     }

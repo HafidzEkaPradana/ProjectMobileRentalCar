@@ -19,10 +19,10 @@ import java.util.List;
 
 public class PesanAdapter extends RecyclerView.Adapter<PesanAdapter.MyViewHolder> {
     private Context context;
-    private ArrayList<DataPesan> list = new ArrayList<>();
+    private List<DataPesan> list;
     private Dialog dialog;
 
-    public PesanAdapter(Context cont,ArrayList<DataPesan> data) {
+    public PesanAdapter(Context cont,List<DataPesan> data) {
         context = cont;
         list = data;
     }

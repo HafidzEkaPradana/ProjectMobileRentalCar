@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectMobile">
         <activity
+            android:name=".AddPemesanan"
+            android:exported="false" />
+        <activity
             android:name=".Pemesanan"
             android:exported="false" />
         <activity
