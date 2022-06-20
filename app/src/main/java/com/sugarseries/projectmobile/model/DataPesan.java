@@ -1,14 +1,15 @@
 package com.sugarseries.projectmobile.model;
 
 public class DataPesan {
-    String id, alamat, sewa, selesai, harga;
+    String id, alamat, harga, selesai, sewa;
 
-    public DataPesan(String id, String alamat, String tglSewa, String tglSelesai, String harga) {
-
+    public DataPesan() {
     }
-
-    public DataPesan(String alamat, String sewa, String selesai, String harga) {
-
+    public DataPesan(String alamat, String harga, String selesai, String sewa) {
+        this.alamat = alamat;
+        this.harga = harga;
+        this.selesai = selesai;
+        this.sewa = sewa;
     }
 
     public String getId() {

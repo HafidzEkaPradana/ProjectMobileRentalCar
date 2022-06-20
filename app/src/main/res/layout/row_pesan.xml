@@ -1,104 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
 
 
-    <LinearLayout
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.8"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Alamat"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_alamat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center_vertical"
-        android:orientation="vertical">
+        android:layout_marginStart="60dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:text="@string/isian"
+        android:textStyle="bold" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.8"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_alamat"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Tanggal Sewa"
+        android:textSize="12dp"
+        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_alamat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:text="Alamat"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_sewa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/tv2"
+        android:text="@string/isian"
+        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:layout_toRightOf="@+id/tv_alamat"
-                android:text="isi"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sewa"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Tanggal Selesai"
+        android:textSize="12dp"
+        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_sewa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_alamat"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="3dp"
-                android:text="Tanggal Sewa"
-                android:textSize="12dp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/tv3"
+        android:text="@string/isian"
+        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv1"
-                android:layout_marginStart="30dp"
-                android:layout_toRightOf="@+id/tv_sewa"
-                android:text="isi"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_selesai"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Harga"
+        android:textSize="12dp"
+        android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_selesai"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_sewa"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="3dp"
-                android:text="Tanggal Selesai"
-                android:textSize="12dp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_marginStart="73dp"
+        android:layout_toRightOf="@+id/tv4"
+        android:text="@string/isian"
+        android:textStyle="bold" />
+</RelativeLayout>
 
-            <TextView
-                android:id="@+id/tv3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv2"
-                android:layout_marginStart="20dp"
-                android:layout_toRightOf="@+id/tv_selesai"
-                android:text="isi"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_harga"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_selesai"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="3dp"
-                android:text="Harga"
-                android:textSize="12dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv3"
-                android:layout_marginStart="73dp"
-                android:layout_toRightOf="@+id/tv_harga"
-                android:text="isi"
-                android:textStyle="bold" />
-        </RelativeLayout>
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+</LinearLayout>
